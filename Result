@@ -1,0 +1,13 @@
+C:\RansomProject\
+├── data/raw/behavior_logs/simulated_behavior.csv      ← 3000+ events
+├── data/processed/behavior/behavior_features.csv      ← 27 features/window
+├── models/
+│   ├── random_forest_behavior.joblib
+│   ├── xgboost_behavior.joblib
+│   └── isolation_forest_behavior.joblib
+└── reports/
+    ├── behavior_metrics.csv      ← F1, AUC, FPR của 3 model
+    ├── behavior_scored_windows.csv
+    ├── feature_importance.csv
+    ├── roc_data.csv
+    └── mitre_alerts.csv
