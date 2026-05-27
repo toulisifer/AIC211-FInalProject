@@ -1,0 +1,19 @@
+# Nếu chưa có Python, tải tại: https://www.python.org/downloads/
+# Tick "Add Python to PATH" khi cài
+
+# Kiểm tra
+python --version
+
+# Tạo thư mục project
+mkdir C:\RansomProject
+cd C:\RansomProject
+
+# Cho phép chạy script
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+# Tạo virtual environment
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+
+# Cài tất cả thư viện (1 lần duy nhất)
+pip install pandas numpy scikit-learn xgboost imbalanced-learn joblib streamlit plotly
