@@ -1,0 +1,17 @@
+cd C:\RansomProject
+.\venv\Scripts\Activate.ps1
+
+# 1. Sinh data
+python generate_safe_behavior_logs.py
+
+# 2. Trích đặc trưng
+python build_behavior_features.py
+
+# 3. Train model
+python train_behavior_models.py
+
+# 4. MITRE mapping
+python mitre_mapping.py
+
+# 5. Mở dashboard
+streamlit run streamlit_app.py
